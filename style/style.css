@@ -1,12 +1,13 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #000;
+    background-color: #f7efef;
     margin: 0;
     color: red;
 }
 
-h1{
+h1 {
     font-size: 40px;
+    text-shadow: 4px 4px 6px #000000;
 }
 em{
     color: orange;
@@ -29,12 +30,31 @@ html {
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 8px 16px 0; */
+    box-shadow: 0 12px 12px 0;
+    /* box-shadow: 2px 2px; */
     margin: 8px;
 }
 
+@keyframes example {
+    0%   {background-color:#d34107; left:0px; top:0px;}
+    25%  {background-color:#ffd700; left:200px; top:0px;}
+    50%  {background-color:#808080 ; left:200px; top:200px;}
+    75%  {background-color:#000000; left:0px; top:200px;}
+    100% {background-color:#ff0000; left:0px; top:0px;}
+  }
+
+.card {
+    /* background-color: red; */
+    position: relative;
+    animation-name: example;
+    animation-duration: 20s;
+  }
+
 .about-section {
     background-image: url("../images/0.png");
+    background-image: 4px 4px 6px #000000;
+    border-bottom: 2px solid black ;
     background-repeat: no-repeat;
     height: 550px;
     background-size: cover;
@@ -43,6 +63,7 @@ html {
     background-color: #474e5d;
     color: white;
 }
+
 
 .container {
     padding: 0 16px;
